@@ -1,20 +1,13 @@
 <?php
+    include_once $_SERVER["DOCUMENT_ROOT"] . '/Clase/Views/layoutExterno.php';
     include_once $_SERVER["DOCUMENT_ROOT"] . '/Clase/Controllers/homeController.php';
 ?>
 
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Proyecto MN</title>
-    <link href="../Estilos/style.css" rel="stylesheet">
-</head>
-
+    <?php
+       AddCss();
+    ?>
 <body>
     <div class="main-wrapper">
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../Imagenes/auth-bg.jpg) no-repeat center center;">
@@ -42,7 +35,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
                                     </div>
-                                    <input id="txtNombreUsuario" name="txtNombreUsuario" type="text" class="form-control form-control-lg" placeholder="Nombre Usuario">
+                                    <input id="txtCorreo" name="txtCorreo" type="text" class="form-control form-control-lg" placeholder="Correo">
                                 </div>
 
                                 <div class="input-group mb-3">
@@ -63,7 +56,7 @@
                                         Si no tienes una cuenta <a href="registro.php" class="text-info m-l-5"><b>Regístrate</b></a>
                                     </div>
                                     <div class="col-sm-12 text-center">
-                                        Si olvidaste la contraseña <a href="" class="text-info m-l-5"><b>Recupera el Acceso</b></a>
+                                        Si olvidaste la contraseña <a href="recuperarAcceso.php" class="text-info m-l-5"><b>Recupera el Acceso</b></a>
                                     </div>
                                 </div>
 
@@ -77,9 +70,10 @@
         </div>
     </div>
     
-    <script src="../Funciones/jquery.min.js"></script>
-    <script src="../Funciones/popper.min.js"></script>
-    <script src="../Funciones/bootstrap.min.js"></script>
+    <?php
+        AddJs();
+    ?>    
+
 </body>
 
 </html>

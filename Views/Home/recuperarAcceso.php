@@ -4,9 +4,9 @@
 ?>
 
 <!DOCTYPE html>
-<html>    
+<html>
     <?php
-        AddCss();
+       AddCss();
     ?>
 <body>
     <div class="main-wrapper">
@@ -16,7 +16,7 @@
 
                     <div class="logo mb-3">
                         <span class="db"><img src="../Imagenes/logo-icon.png" alt="logo" /></span>
-                        <h5 class="font-medium m-b-20">Registro de Usuarios</h5>
+                        <h5 class="font-medium m-b-20">Recuperar Acceso</h5>
                     </div>
 
                     <div class="row">
@@ -35,42 +35,21 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
                                     </div>
-                                    <input id="txtIdentificacion" name="txtIdentificacion" type="text" class="form-control form-control-lg" placeholder="Identificación">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
-                                    </div>
-                                    <input id="txtNombre" name="txtNombre" type="text" class="form-control form-control-lg" placeholder="Nombre">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
-                                    </div>
-                                    <input id="txtCorreo" name="txtCorreo" type="email" class="form-control form-control-lg" placeholder="Correo">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
-                                    </div>
-                                    <input id="txtContrasenna" name="txtContrasenna" type="password" class="form-control form-control-lg" placeholder="Contraseña">
+                                    <input id="txtCorreo" name="txtCorreo" type="text" class="form-control form-control-lg" placeholder="Correo">
                                 </div>
 
                                 <div class="form-group text-center">
                                     <div class="col-xs-12 p-b-20">
-                                        <button id="btnRegistrarUsuario" name="btnRegistrarUsuario" class="btn btn-block btn-lg btn-info" type="submit">Procesar</button>
+                                        <button id="btnRecuperarAcceso" name="btnRecuperarAcceso" class="btn btn-block btn-lg btn-info" type="submit">Procesar</button>
                                     </div>
                                 </div>
 
                                 <div class="form-group m-b-0 m-t-10">
                                     <div class="col-sm-12 text-center">
-                                        Si ya tienes una cuenta <a href="login.php" class="text-info m-l-5"><b>Inicia Sesión</b></a>
+                                        Si no tienes una cuenta <a href="registro.php" class="text-info m-l-5"><b>Regístrate</b></a>
                                     </div>
                                     <div class="col-sm-12 text-center">
-                                        Si olvidaste la contraseña <a href="recuperarAcceso.php" class="text-info m-l-5"><b>Recupera el Acceso</b></a>
+                                         Si ya tienes una cuenta <a href="login.php" class="text-info m-l-5"><b>Inicia Sesión</b></a>
                                     </div>
                                 </div>
 
